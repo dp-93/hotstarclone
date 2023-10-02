@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hotstar.com</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+	<link rel="icon" type="image/x-icon" href="https://99designs-blog.imgix.net/blog/wp-content/uploads/2022/06/applelogo.png?auto=format&q=60&fit=max&w=930">
+	 <script>
+	document.addEventListner("DOMContentLoaded",function(){
+	    var element=document.getElementById("mycarousel");
+		var myCarousel= new bootstrap.Carousel(element,{interval:1000)
+		})
+	</script>
+    <style>
+	*{
+	    padding:0px;
+		margin:0px;
+		box-sizing:border-box;
+	}
+	body{
+    width: 100%;
+    background:white;
+    position: relative;
+    font-family: roboto, sans-serif;
+    }
+          .navbar{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 4%;
+    background: #0c111b;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo{
+    height: 70px;
+}
+
+.nav-links{
+    margin-top: 10px;
+    display: flex;
+    list-style:none;
+}
+
+.nav-items a{
+    text-decoration: none;
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    opacity: 0.9;
+}
+.right-container{
+    display: block;
+    margin-left: auto;
+}
+
+.search-box{
+    border: none;
+    border-bottom: 1px solid #aaa;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color:#fff;
+    width: 250px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.search-box:focus{
+    width: 400px;
+    border-color: #1f80e0;
+}
+
+.sub-btn{
+    background: #1f80e0;
+    height: 30px;
+    padding: 0 20px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.login-link{
+    color: #fff;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.card-body img{
+	    margin:auto;
+		display:flex;
+		width:250px;
+		height:270px;
+		margin-bottom:10px;
+		border-radius:12px;
+	}
+	.card-body img:hover{
+	    box-shadow:5px 5px 5px rgba(0,0,0,0.2);
+		filter:brightness(120%);
+		cursor:pointer;
+		transition:0.25s ease-in;
+		transform:scale(0.5)
+	}	
+</style>
+<body>
+<nav class="navbar">
+    <div class="p-2 container-fluid">
+        <img src="https://images.firstpost.com/wp-content/uploads/2019/11/disney-1024-1.jpg" class="brand-logo" alt="">
+         <ul class="nav-links">
+            <li class="nav-items"><a href="TVshows.html">TV</a></li>
+            <li class="nav-items"><a href="Gallary.html">movies</a></li>
+            <li class="nav-items"><a href="sports.html">sports</a></li>
+            <li class="nav-items"><a href="premium.html">premium</a></li>
+         </ul>
+
+        <div class="right-container">
+            <input type="text" class="search-box" placeholder="search">
+            <button class="sub-btn">Subscribe</button>
+            <a href="Login Form.html" class="login-link">login</a>
+        </div>
+	</div>
+	
+</nav>
+<div class="container">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+		    <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+			<li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+			<li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+			<li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+			<li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+			<li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
+		</ol>
+		<div class="carousel-inner">
+		    <div class="carousel-item active">
+			    <img width="500" height="600" src="https://sm.mashable.com/t/mashable_in/photo/default/brahmastra-rumours-true-shah-rukh-khan-starts-filming-for-ra_tzas.1248.jpg" class="d-block w-100" alt="slide 1">
+			</div>	
+			<div class="carousel-item">
+			    <img width="500" height="600" src="https://c.ndtvimg.com/2022-10/ctbh33j8_akshaye_625x300_13_October_22.jpg?im=Resize=(1230,900)" class="d-block w-100" alt="slide 2">
+			</div>	
+			<div class="carousel-item">
+			    <img width="500" height="600" src="https://www.koimoi.com/wp-content/new-galleries/2021/12/picture-the-entire-team-of-shehzada-huddle-up-to-commence-the-night-schedule-of-the-film-001.jpg" class="d-block w-100" alt="slide 3">
+			</div>	
+			<div class="carousel-item">
+			    <img width="500" height="600" src="https://c.ndtvimg.com/2l9m84l_super-30,-hrithik-roshan_625x300_05_September_18.jpg" class="d-block w-100" alt="slide 4">
+			</div>	
+			<div class="carousel-item">
+			    <img width="500" height="600" src="https://i.pinimg.com/originals/cf/dc/2c/cfdc2c912236551b74db8685d20f3828.jpg" class="d-block w-100" alt="slide 5">
+			</div>	
+			<div class="carousel-item">
+			    <img width="500" height="600" src="https://img1.hotstarext.com/image/upload/f_auto/sources/r1/cms/prod/1993/741993-h" class="d-block w-100" alt="slide 6">
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon"></span>
+		</a>
+		<a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+		    <span class="carousel-control-next-icon"></span>
+		</a>
+	</div>
+</div>
+<div class="container">
+    <div class="row text-center p-2 bg-success">
+	    <div class="col-md-4">
+		    <div class="card">
+			    <div class="card-header text-center">
+				Featured
+				</div>
+				<div class="card-body align-item-center">
+				    <img src="https://i.pinimg.com/originals/cf/dc/2c/cfdc2c912236551b74db8685d20f3828.jpg" alt="Match">
+					<h5 class="card-title">Utd Vs City </h5>
+                    <p class="card-text"></p>
+				</div>
+				<div class="card-footer text-muted text-center">
+				Live 
+				</div>
+			</div>
+		</div>
+		 <div class="col-md-4">
+		    <div class="card">
+			    <div class="card-header text-center">
+				Featured
+				</div>
+				<div class="card-body align-item-center">
+				    <img src="https://www.telugubulletin.com/wp-content/uploads/2022/02/images-48-497x616.jpeg" alt="RRR">
+					<h5 class="card-title">RRR 2021 Film </h5>
+                    <p class="card-text"></p>
+				</div>
+				<div class="card-footer text-muted text-center">
+				1 Year ago
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+		    <div class="card">
+			    <div class="card-header text-center">
+				Featured
+				</div>
+				<div class="card-body align-item-center">
+				    <img src="https://static.toiimg.com/thumb/imgsize-124764,msid-95640324,width-500,resizemode-4/95640324.jpg" alt="Pushpa">
+					<h5 class="card-title">Ind Vs Nz </h5>
+                    <p class="card-text"></p>
+				</div>
+				<div class="card-footer text-muted text-center">
+				 Fearless Ind trash Nz
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row text-center p-2 bg-danger">
+	    <div class="col-md-4">
+		    <div class="card">
+			    <div class="card-header text-center">
+				Featured
+				</div>
+				<div class="card-body align-item-center">
+				    <img src="https://assets.thehansindia.com/h-upload/2021/01/26/1026917-kgf-2.webp" alt="KGF2">
+					<h5 class="card-title">KGF2 2022 Film </h5>
+                    <p class="card-text"></p>
+				</div>
+				<div class="card-footer text-muted text-center">
+				1 year ago
+				</div>
+			</div>
+		</div>
+		 <div class="col-md-4">
+		    <div class="card">
+			    <div class="card-header text-center">
+				Featured
+				</div>
+				<div class="card-body align-item-center">
+				    <img src="https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_.jpg" alt="DS">
+					<h5 class="card-title">Doctor Strange 2021 Film </h5>
+                    <p class="card-text"></p>
+				</div>
+				<div class="card-footer text-muted text-center">
+				1 year ago
+				</div>
+			</div>
+		</div>
+		 <div class="col-md-4">
+		    <div class="card">
+			    <div class="card-header text-center">
+				Featured
+				</div>
+				<div class="card-body align-item-center">
+				    <img src="https://www.codemasters.com/wp-content/uploads/2020/04/F12020_Mercedes_16x9.jpg" alt="Kantara">
+					<h5 class="card-title">F1 Games </h5>
+                    <p class="card-text"></p>
+				</div>
+				<div class="card-footer text-muted text-center">
+				Its Now Or Never
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="row text-center p-2 bg-info">
+	    <div class="col-md-4">
+		    <div class="card">
+			    <div class="card-header text-center">
+				Featured
+				</div>
+				<div class="card-body align-item-center">
+				    <img src="https://cdn.wionews.com/sites/default/files/styles/story_page/public/2022/06/21/272729-drishyam-1.jpg" alt="AD">
+					<h5 class="card-title">Drishyam 2 2022 Film </h5>
+                    <p class="card-text"></p>
+				</div>
+				<div class="card-footer text-muted text-center">
+				 1 month ago
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+		    <div class="card">
+			    <div class="card-header text-center">
+				Featured
+				</div>
+				<div class="card-body align-item-center">
+				    <img src="https://www.sportco.io/images/post/ah_1659024549.jpg" alt="Kartikeya">
+					<h5 class="card-title">Arg Vs Port </h5>
+                    <p class="card-text"></p>
+				</div>
+				<div class="card-footer text-muted text-center">
+				 Crucial moment for Fans
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+		    <div class="card">
+			    <div class="card-header text-center">
+				Featured
+				</div>
+				<div class="card-body align-item-center">
+				    <img src="https://stat1.bollywoodhungama.in/wp-content/uploads/2022/10/Ram-Setu-2.jpeg" alt="Ram-Setu">
+					<h5 class="card-title">Ram Setu 2022 Film </h5>
+                    <p class="card-text"></p>
+				</div>
+				<div class="card-footer text-muted text-center">
+				 1 month ago
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row text-center p-2 bg-secondary">
+	    <div class="col-md-4">
+		    <div class="card">
+			    <div class="card-header text-center">
+				Featured
+				</div>
+				<div class="card-body align-item-center">
+				    <img src="https://upload.wikimedia.org/wikipedia/hi/2/23/Bhool_Bhulaiyaa_2_film_poster.jpg" alt="AD">
+					<h5 class="card-title">BhulBhulya 2022 Film </h5>
+                    <p class="card-text"></p>
+				</div>
+				<div class="card-footer text-muted text-center">
+				 1 month ago
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+		    <div class="card">
+			    <div class="card-header text-center">
+				Featured
+				</div>
+				<div class="card-body align-item-center">
+				    <img src="https://pbs.twimg.com/media/EciPqiAUcAIarEM.jpg" alt="Kartikeya">
+					<h5 class="card-title">Bahubali 2022 Film </h5>
+                    <p class="card-text"></p>
+				</div>
+				<div class="card-footer text-muted text-center">
+				 2 year ago
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+		    <div class="card">
+			    <div class="card-header text-center">
+				Featured
+				</div>
+				<div class="card-body align-item-center">
+				    <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2019/08/30/863866-dabang-delhi-kc-vs-patna-pirates.jpg" alt="Ram-Setu">
+					<h5 class="card-title">Dehli Vs Pirates </h5>
+                    <p class="card-text">Battle of Champions</p>
+				</div>
+				<div class="card-footer text-muted text-center">
+				 In next two hours
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+
+
+
+</body>
+</html>
